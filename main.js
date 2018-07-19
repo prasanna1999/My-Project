@@ -127,7 +127,14 @@ function achievements(ac){
   child2.appendChild(ed);
   var hr=document.createElement("hr");
   child2.appendChild(hr);
-  for(i=0;i<ac.length;i++){
-
-  }
+    var l1=document.createElement("ul");
+    var li1=document.createElement("li");
+    li1.textContent=ac[0].coding;
+    l1.appendChild(li1);
+    child2.appendChild(l1);
+    var l=document.createElement("ul");
+    var li=document.createElement("li");
+    li.textContent=ac[1].ppts;
+    l.appendChild(li);
+    child2.appendChild(l);
 }
